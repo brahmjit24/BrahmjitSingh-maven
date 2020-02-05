@@ -1,6 +1,9 @@
 package epam.newYearsGift;
 
-
+//------base class sweets being inherited in several classes-------------------
+/*
+ * implementing comparable so as to sort sweets based on weight
+ * in linear order*/
 class Sweets implements Comparable<Sweets> {
 	    String name;
 	    int price;
@@ -23,7 +26,7 @@ class Sweets implements Comparable<Sweets> {
 	    	return price;
 	    }
 	    public int compareTo(Sweets comparestu) {
-	        double compareage=((Sweets)comparestu).getWeight();
-	        return (int)(this.getWeight()-compareage);
+	        double compareWeight=((Sweets)comparestu).getWeight();
+	        return (int)(this.getWeight()-compareWeight);
 	    }
 	} 
